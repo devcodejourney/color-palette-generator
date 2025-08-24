@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Palette Generator</title>
+    <link rel="stylesheet" href="src/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Color Palette Generator</h1>
+            <p class="subtitle">Create beautiful color palettes with a single click. Lock your favorite colors and copy
+                hex codes easily.</p>
+        </header>
+
+        <main>
+            <div class="palette-container" id="paletteContainer">
+                <!-- Colors will be generated here -->
+            </div>
+
+            <div class="controls">
+                <button class="generate-btn" id="generateBtn">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="23 4 23 10 17 10"></polyline>
+                        <path d="M20.49 15a9 9 0 1 1-2.12-9.36L23 10"></path>
+                    </svg>
+                    Generate New Palette
+                </button>
+
+                <div class="info">
+                    <p>🎨 Click on any color to copy its hex code</p>
+                    <p>🔒 Click the lock icon to keep a color</p>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div class="toast" id="toast"></div>
+
+    <script src="src/script.js"></script>
+</body>
+
+</html>
